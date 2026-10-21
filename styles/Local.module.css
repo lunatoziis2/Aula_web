@@ -1,0 +1,239 @@
+/* Luna Tozi RA:10771378 / Millena Maurer RA:10771373 / Hellen Karoline RA:10771420 */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo p {
+    color: var(--cor-principal);
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navegacao a {
+    color: var(--cor-principal);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 20px;
+    border: 2px solid var(--cor-principal);
+    border-radius: 20px;
+}
+
+.navegacao a:hover {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.informacoesLocal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 55px;
+    gap: 40px;
+}
+
+.textoLocal {
+    width: 60%;
+}
+
+.textoLocal h1 {
+    color: var(--cor-principal);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.textoLocal p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.textoLocal .localizacao {
+    color: var(--cor-principal);
+    font-weight: bold;
+}
+
+.imagemLocal {
+    width: 45%;
+    margin: 0;
+}
+
+.imagemLocal img {
+    width: 100%;
+    max-width: 480px;
+    height: 270px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 55px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.informacao {
+    padding: 5px 10px;
+}
+
+.informacao h3 {
+    color: var(--cor-principal);
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.informacao p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.acessibilidade {
+    background-color: var(--cor-fundo-suave);
+    padding: 35px 55px;
+}
+
+.acessibilidade h2 {
+    color: var(--cor-principal);
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.recursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.recurso {
+    background-color: white;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.recurso h3 {
+    color: var(--cor-principal);
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.recurso ul {
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+.recurso li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.verMais {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--cor-principal);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.verMais:hover {
+    background-color: var(--cor-principal-hover);
+}
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        padding: 15px 20px;
+    }
+
+    .logo p {
+        font-size: 22px;
+    }
+
+    .navegacao a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .informacoesLocal {
+        flex-direction: column;
+        padding: 30px 25px;
+        gap: 25px;
+        align-items: flex-start;
+    }
+
+    .textoLocal {
+        width: 100%;
+    }
+
+    .textoLocal h1 {
+        font-size: 28px;
+    }
+
+    .textoLocal p {
+        font-size: 15px;
+    }
+
+    .imagemLocal {
+        width: 100%;
+    }
+
+    .imagemLocal img {
+        width: 100%;
+        height: auto;
+    }
+
+    .informacoes {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 25px;
+        gap: 15px;
+    }
+
+    .informacao {
+        padding: 10px 5px;
+    }
+
+    .informacao h3 {
+        font-size: 15px;
+    }
+
+    .informacao p {
+        font-size: 14px;
+    }
+
+    .acessibilidade {
+        padding: 30px 25px;
+    }
+
+    .acessibilidade h2 {
+        font-size: 21px;
+    }
+
+    .recursos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .recurso {
+        padding: 18px;
+    }
+
+    .recurso h3 {
+        font-size: 15px;
+    }
+
+    .recurso li {
+        font-size: 14px;
+    }
+}

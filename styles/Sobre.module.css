@@ -1,0 +1,177 @@
+/* Luna Tozi RA:10771378 / Millena Maurer RA:10771373 / Hellen Karoline RA:10771420 */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+    color: var(--cor-principal);
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navegacao a {
+    color: var(--cor-principal);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 22px;
+    border: 2px solid var(--cor-principal);
+    border-radius: 20px;
+}
+
+.navegacao a:hover {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 50px;
+}
+
+.colunaTexto {
+    width: 50%;
+}
+
+.colunaTexto h2 {
+    color: var(--cor-principal);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.colunaTexto h3 {
+    color: var(--cor-texto);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.colunaTexto p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.colunaImagem {
+    width: 50%;
+    text-align: center;
+}
+
+.colunaImagem img {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.valores {
+    background-color: var(--cor-fundo-suave);
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.valores h3 {
+    color: var(--cor-principal);
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.valor {
+    display: inline-block;
+    width: 140px;
+    margin: 10px 15px;
+    vertical-align: top;
+}
+
+.valor img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    margin: 0 auto 10px;
+}
+
+.valor p {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--cor-texto);
+    margin: 5px 0;
+}
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navegacao a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        padding: 35px 25px;
+        gap: 30px;
+    }
+
+    .colunaTexto {
+        width: 100%;
+    }
+
+    .colunaTexto h2 {
+        font-size: 27px;
+    }
+
+    .colunaTexto h3 {
+        font-size: 19px;
+    }
+
+    .colunaTexto p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .colunaImagem {
+        width: 100%;
+    }
+
+    .colunaImagem img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .valores {
+        padding: 30px 20px;
+    }
+
+    .valores h3 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .valor {
+        width: 110px;
+        margin: 10px 5px;
+    }
+
+    .valor img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .valor p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,87 @@
+/* Luna Tozi RA:10771378 / Millena Maurer RA:10771373 / Hellen Karoline RA:10771420 */
+
+:root {
+    --cor-principal: #4c3b8c;
+    --cor-principal-hover: #372b70;
+    --cor-texto: #333333;
+    --cor-texto-secundario: #666666;
+    --cor-fundo: #ffffff;
+    --cor-fundo-suave: #f3f1f8;
+    --cor-borda: #e5e1ef;
+    --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cor-principal-hover);
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+    -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+    outline: 3px solid var(--cor-principal);
+    outline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul,
+ol {
+    padding-left: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+}

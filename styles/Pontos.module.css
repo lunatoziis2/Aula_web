@@ -1,0 +1,193 @@
+/* Luna Tozi RA:10771378 / Millena Maurer RA:10771373 / Hellen Karoline RA:10771420 */
+
+.pagina {
+    min-height: 100vh;
+    background-color: #f7f5fc;
+    color: #1E1B33;
+}
+
+.cabecalho {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.logo h1 {
+    color: var(--cor-principal);
+    font-size: 28px;
+}
+
+.navegacao {
+    display: flex;
+    gap: 30px;
+}
+
+.navegacao a {
+    color: #1E1B33;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navegacao a:hover {
+    color: var(--cor-principal);
+}
+
+.escolhaDestino {
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.escolhaDestino h2 {
+    color: var(--cor-principal);
+    font-size: 30px;
+}
+
+.listaPontos {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cardPonto {
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.cardPonto:hover {
+    transform: translateY(-5px);
+}
+
+.cardPonto > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.informacoesPonto {
+    padding: 20px;
+}
+
+.informacoesPonto h3 {
+    color: #1E1B33;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.localizacao {
+    color: var(--cor-texto-secundario);
+    font-size: 14px;
+}
+
+.detalhes {
+    padding: 0 20px 20px;
+}
+
+.detalhes a {
+    display: inline-block;
+    background-color: var(--cor-principal);
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.detalhes a:hover {
+    background-color: var(--cor-principal-hover);
+    color: #ffffff;
+}
+
+.rodape {
+    background-color: #1E1B33;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 40px 60px;
+}
+
+.rodapeLogo {
+    max-width: 500px;
+}
+
+.rodapeLogo h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.rodapeLogo p {
+    line-height: 1.6;
+}
+
+.rodapeContato h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.rodapeContato p {
+    margin-bottom: 8px;
+}
+
+.redesSociais {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.redesSociais img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+
+    .listaPontos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cabecalho {
+        padding: 20px 30px;
+    }
+
+    .rodape {
+        padding: 35px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .navegacao {
+        gap: 15px;
+    }
+
+    .listaPontos {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .escolhaDestino h2 {
+        font-size: 25px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+}
