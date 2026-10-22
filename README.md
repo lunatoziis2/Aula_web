@@ -16,7 +16,7 @@ O site reúne essas informações em um só lugar e ajuda pessoas com deficiênc
 
 - **Missão:** facilitar o acesso à cultura, ao lazer e à cidade para todas as pessoas.
 - **Visão:** uma São Paulo onde acessibilidade não seja uma dúvida, mas uma realidade.
-- **Público-alvo:** pessoas com deficiência física, visual e auditiva, seus familiares e acompanhantes.
+- **Público-alvo:** pessoas com deficiência física e seus familiares e acompanhantes.
 
 ---
 
